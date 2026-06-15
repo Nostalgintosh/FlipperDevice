@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HackerBoard</string>
+    <string name="ime_label">HackerBoard</string>
+    <string name="subtype_en">HackerBoard (English)</string>
+
+    <string name="setup_title">&gt;_ HackerBoard</string>
+    <string name="tagline">A keyboard for coders, sysadmins &amp; ethical hackers.</string>
+    <string name="step1_title">1 · Enable HackerBoard</string>
+    <string name="step1_body">Turn HackerBoard on in the system keyboard list.</string>
+    <string name="step1_button">Enable in Settings</string>
+    <string name="step2_title">2 · Select HackerBoard</string>
+    <string name="step2_body">Pick HackerBoard as the active input method.</string>
+    <string name="step2_button">Switch Keyboard</string>
+    <string name="step3_title">3 · Try it</string>
+    <string name="step3_body">Tap below and type. Number row, Tab, Esc, Ctrl, arrows, F-keys and a snippet bar are all built in.</string>
+    <string name="test_hint">echo "it works" | tee /dev/pts/0</string>
+
+    <string name="accent_title">Theme</string>
+    <string name="feel_title">Feel</string>
+    <string name="haptics">Haptic feedback</string>
+    <string name="sound">Key sound</string>
+    <string name="key_height">Key height</string>
+    <string name="status_enabled">HackerBoard is enabled.</string>
+    <string name="status_disabled">HackerBoard is not enabled yet.</string>
+    <string name="status_active">HackerBoard is the active keyboard.</string>
+</resources>

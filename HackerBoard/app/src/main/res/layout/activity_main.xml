@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/setup_title"
+            android:textColor="@color/accent"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/tagline"
+            android:textColor="@color/text_dim"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@color/surface"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:text="@string/status_disabled"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+        <!-- Step 1 -->
+        <TextView style="@style/Section" android:text="@string/step1_title" />
+        <TextView style="@style/Body" android:text="@string/step1_body" />
+        <Button
+            android:id="@+id/btnEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/step1_button" />
+
+        <!-- Step 2 -->
+        <TextView style="@style/Section" android:text="@string/step2_title" />
+        <TextView style="@style/Body" android:text="@string/step2_body" />
+        <Button
+            android:id="@+id/btnSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/step2_button" />
+
+        <!-- Step 3 -->
+        <TextView style="@style/Section" android:text="@string/step3_title" />
+        <TextView style="@style/Body" android:text="@string/step3_body" />
+        <EditText
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/surface"
+            android:fontFamily="monospace"
+            android:gravity="top"
+            android:hint="@string/test_hint"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:minLines="3"
+            android:padding="12dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_dim"
+            android:importantForAutofill="no" />
+
+        <!-- Settings -->
+        <TextView style="@style/Section" android:text="@string/accent_title" />
+        <LinearLayout
+            android:id="@+id/accentRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" />
+
+        <TextView style="@style/Section" android:text="@string/feel_title" />
+        <CheckBox
+            android:id="@+id/cbHaptics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/haptics"
+            android:textColor="@color/text" />
+        <CheckBox
+            android:id="@+id/cbSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/heightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/key_height"
+            android:textColor="@color/text_dim"
+            android:textSize="13sp" />
+        <SeekBar
+            android:id="@+id/seekHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>

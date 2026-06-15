@@ -1,0 +1,303 @@
+Flipper Device audit
+generated: Sun Jun 14 21:30:02 EDT 2026
+
+== adb devices ==
+List of devices attached
+R95N707H45Z            device usb:3-1 product:a11que model:SM_A115U1 device:a11q transport_id:8
+
+
+== identity ==
+ro.product.manufacturer=samsung
+ro.product.model=SM-A115U1
+ro.product.name=a11que
+ro.product.device=a11q
+ro.build.version.release=12
+ro.build.version.sdk=31
+ro.build.display.id=SP1A.210812.016.A115U1UESACWL1
+ro.bootloader=A115U1UESACWL1
+
+== current names ==
+global.device_name=Galaxy A11
+system.device_name=null
+secure.bluetooth_name=Galaxy A11
+global.wifi_p2p_device_name=Galaxy A11
+
+== battery ==
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1600000
+  Max charging voltage: 5000000
+  Charge counter: 4057000
+  status: 5
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4380
+  temperature: 300
+  technology: Li-ion
+  batteryMiscEvent: 0
+  batteryCurrentEvent: 0
+  mSecPlugTypeSummary: 1
+  LED Charging: true
+  LED Low Battery: true
+  current now: 0
+  charge counter: 4057000
+  Adaptive Fast Charging Settings: true
+  Super Fast Charging Settings: false
+USE_FAKE_BATTERY: false
+FEATURE_WIRELESS_FAST_CHARGER_CONTROL: false
+  mWasUsedWirelessFastChargerPreviously: false
+  mWirelessFastChargingSettingsEnable: true
+LLB CAL: 
+LLB MAN: 20200709
+LLB CURRENT: YEAR2026M6D12
+LLB DIFF: 307
+  mSavedBatteryBeginningDate: 0
+SEC_FEATURE_BATTERY_FULL_CAPACITY: false
+  mFullCapacityEnable: false
+FEATURE_HICCUP_CONTROL: false
+FEATURE_SUPPORTED_DAILY_BOARD: false
+SEC_FEATURE_BATTERY_LIFE_EXTENDER: false
+SEC_FEATURE_USE_WIRELESS_POWER_SHARING: false
+health: vendor.samsung.hardware.health@2.0::ISehHealth@Proxy
+BatteryInfoBackUp
+  mSavedBatteryAsoc: -1
+  mSavedBatteryMaxTemp: 377
+  mSavedBatteryMaxCurrent: 2710725
+  mSavedBatteryUsage: 435
+  FEATURE_SAVE_BATTERY_CYCLE: true
+  SEC_FEATURE_PREVENT_SWELLING: false
+
+== disabled packages ==
+package:com.android.chrome
+package:com.android.vending
+package:com.google.android.apps.maps
+package:com.google.android.apps.restore
+package:com.google.android.gm
+package:com.google.android.googlequicksearchbox
+package:com.google.android.projection.gearhead
+package:com.microsoft.skydrive
+package:com.netflix.mediaclient
+package:com.sec.android.emergencylauncher
+
+== google packages ==
+com.android.chrome
+com.android.vending
+com.google.android.apps.carrier.carrierwifi
+com.google.android.apps.maps
+com.google.android.apps.restore
+com.google.android.apps.tachyon
+com.google.android.apps.turbo
+com.google.android.apps.youtube.music
+com.google.android.captiveportallogin
+com.google.android.cellbroadcastreceiver
+com.google.android.cellbroadcastservice
+com.google.android.configupdater
+com.google.android.connectivity.resources
+com.google.android.documentsui
+com.google.android.ext.services
+com.google.android.ext.shared
+com.google.android.feedback
+com.google.android.gm
+com.google.android.gms
+com.google.android.gms.location.history
+com.google.android.googlequicksearchbox
+com.google.android.gsf
+com.google.android.modulemetadata
+com.google.android.networkstack
+com.google.android.networkstack.permissionconfig
+com.google.android.networkstack.tethering
+com.google.android.networkstack.tethering.overlay
+com.google.android.onetimeinitializer
+com.google.android.overlay.gmsconfig.common
+com.google.android.overlay.gmsconfig.geotz
+com.google.android.overlay.gmsconfig.gsa
+com.google.android.overlay.gmsconfig.photos
+com.google.android.overlay.modules.cellbroadcastreceiver
+com.google.android.overlay.modules.cellbroadcastservice
+com.google.android.overlay.modules.documentsui
+com.google.android.overlay.modules.ext.services
+com.google.android.overlay.modules.modulemetadata.forframework
+com.google.android.overlay.modules.permissioncontroller
+com.google.android.overlay.modules.permissioncontroller.forframework
+com.google.android.packageinstaller
+com.google.android.partnersetup
+com.google.android.permissioncontroller
+com.google.android.printservice.recommendation
+com.google.android.projection.gearhead
+com.google.android.providers.media.module
+com.google.android.setupwizard
+com.google.android.syncadapters.calendar
+com.google.android.syncadapters.contacts
+com.google.android.tts
+com.google.android.webview
+com.google.android.youtube
+com.google.mainline.telemetry
+
+== samsung packages ==
+com.samsung.InputEventApp
+com.samsung.SMT
+com.samsung.aasaservice
+com.samsung.accessibility
+com.samsung.advp.imssettings
+com.samsung.android.A11.d01.wallpapermulti
+com.samsung.android.ConnectivityOverlay
+com.samsung.android.ConnectivityUxOverlay
+com.samsung.android.accessibility.talkback
+com.samsung.android.allshare.service.fileshare
+com.samsung.android.allshare.service.mediashare
+com.samsung.android.app.appsedge
+com.samsung.android.app.clipboardedge
+com.samsung.android.app.clockpack
+com.samsung.android.app.cocktailbarservice
+com.samsung.android.app.contacts
+com.samsung.android.app.dressroom
+com.samsung.android.app.galaxyfinder
+com.samsung.android.app.notes
+com.samsung.android.app.notes.addons
+com.samsung.android.app.omcagent
+com.samsung.android.app.settings.bixby
+com.samsung.android.app.sharelive
+com.samsung.android.app.soundpicker
+com.samsung.android.app.spage
+com.samsung.android.app.taskedge
+com.samsung.android.app.telephonyui
+com.samsung.android.app.updatecenter
+com.samsung.android.app.watchmanagerstub
+com.samsung.android.aware.service
+com.samsung.android.beaconmanager
+com.samsung.android.biometrics.app.setting
+com.samsung.android.bluelightfilter
+com.samsung.android.calendar
+com.samsung.android.callbgprovider
+com.samsung.android.cidmanager
+com.samsung.android.container
+com.samsung.android.da.daagent
+com.samsung.android.dialer
+com.samsung.android.dqagent
+com.samsung.android.dynamiclock
+com.samsung.android.easysetup
+com.samsung.android.email.provider
+com.samsung.android.fmm
+com.samsung.android.forest
+com.samsung.android.gru
+com.samsung.android.honeyboard
+com.samsung.android.incallui
+com.samsung.android.kgclient
+com.samsung.android.kidsinstaller
+com.samsung.android.localeoverlaymanager
+com.samsung.android.location
+com.samsung.android.lool
+com.samsung.android.mapsagent
+com.samsung.android.mdm
+com.samsung.android.mdx.kit
+com.samsung.android.mdx.quickboard
+com.samsung.android.messaging
+com.samsung.android.mobileservice
+com.samsung.android.mtp
+com.samsung.android.networkdiagnostic
+com.samsung.android.networkstack
+com.samsung.android.networkstack.tethering.overlay
+com.samsung.android.privacydashboard
+com.samsung.android.providers.contacts
+com.samsung.android.providers.factory
+com.samsung.android.providers.media
+com.samsung.android.rubin.app
+com.samsung.android.scloud
+com.samsung.android.sdm.config
+com.samsung.android.secsoundpicker
+com.samsung.android.service.peoplestripe
+com.samsung.android.setting.multisound
+com.samsung.android.shortcutbackupservice
+com.samsung.android.sm.devicesecurity
+com.samsung.android.sm.policy
+com.samsung.android.smartcallprovider
+com.samsung.android.smartmirroring
+com.samsung.android.smartswitchassistant
+com.samsung.android.stickercenter
+com.samsung.android.themecenter
+com.samsung.android.themestore
+com.samsung.android.video
+com.samsung.android.wallpaper.res
+com.samsung.android.wcmurlsnetworkstack
+com.samsung.android.wifi.p2paware.resources
+com.samsung.android.wifi.resources
+com.samsung.android.wifi.resources.wpa2
+com.samsung.android.wifi.softap.resources
+com.samsung.app.newtrim
+com.samsung.clipboardsaveservice
+com.samsung.cmh
+com.samsung.faceservice
+com.samsung.ims.smk
+com.samsung.internal.systemui.navbar.gestural_no_hint
+com.samsung.internal.systemui.navbar.sec_gestural
+com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+com.samsung.klmsagent
+com.samsung.phone.overlay.common
+com.samsung.safetyinformation
+com.samsung.sec.android.application.csc
+com.samsung.storyservice
+com.samsung.unifiedtp
+com.sec.android.RilServiceModeApp
+com.sec.android.app.DataCreate
+com.sec.android.app.SecSetupWizard
+com.sec.android.app.billing
+com.sec.android.app.bluetoothtest
+com.sec.android.app.camera
+com.sec.android.app.chromecustomizations
+com.sec.android.app.clockpackage
+com.sec.android.app.factorykeystring
+com.sec.android.app.launcher
+com.sec.android.app.myfiles
+com.sec.android.app.parser
+com.sec.android.app.personalization
+com.sec.android.app.quicktool
+com.sec.android.app.safetyassurance
+com.sec.android.app.samsungapps
+com.sec.android.app.sbrowser
+com.sec.android.app.servicemodeapp
+com.sec.android.app.setupwizard
+com.sec.android.app.setupwizardlegalprovider
+com.sec.android.app.soundalive
+com.sec.android.app.ve.vebgm
+com.sec.android.daemonapp
+com.sec.android.easyMover.Agent
+com.sec.android.easyonehand
+com.sec.android.emergencylauncher
+com.sec.android.emergencymode.service
+com.sec.android.gallery3d
+com.sec.android.mimage.photoretouching
+com.sec.android.provider.badge
+com.sec.android.provider.emergencymode
+com.sec.android.sdhms
+com.sec.android.soagent
+com.sec.app.RilErrorNotifier
+com.sec.automation
+com.sec.bcservice
+com.sec.enterprise.knox.cloudmdm.smdms
+com.sec.enterprise.mdm.services.simpin
+com.sec.epdg
+com.sec.epdgtestapp
+com.sec.hiddenmenu
+com.sec.imslogger
+com.sec.imsservice
+com.sec.location.nfwlocationprivacy
+com.sec.mhs.smarttethering
+com.sec.modem.settings
+com.sec.phone
+com.sec.providers.assisteddialing
+com.sec.spp.push
+com.sec.sve
+com.sec.unifiedwfc
+com.sec.usbsettings
+com.sec.vsim.ericssonnsds.webapp
+
+== recent crash signals ==
+06-14 21:27:38.971 E/Watchdog( 1592): !@Sync: 4132 heap: 43 / 45 [2026-06-14 21:27:38.968] sdogWay: softdog FD: 694
+06-14 21:28:08.982 E/Watchdog( 1592): !@Sync: 4133 heap: 41 / 45 [2026-06-14 21:28:08.981] sdogWay: softdog FD: 693
+06-14 21:28:38.997 E/Watchdog( 1592): !@Sync: 4134 heap: 40 / 45 [2026-06-14 21:28:38.995] sdogWay: softdog FD: 693
+06-14 21:29:09.009 E/Watchdog( 1592): !@Sync: 4135 heap: 44 / 45 [2026-06-14 21:29:09.007] sdogWay: softdog FD: 693
+06-14 21:29:39.019 E/Watchdog( 1592): !@Sync: 4136 heap: 43 / 45 [2026-06-14 21:29:39.017] sdogWay: softdog FD: 694

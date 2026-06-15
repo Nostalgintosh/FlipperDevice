@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- API 27+ adds the navigation-bar light flag; API 26 must not see it. -->
+    <style name="Theme.FlipperLauncher" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fz_black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

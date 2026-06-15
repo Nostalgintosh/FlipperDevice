@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- base -->
+    <path
+        android:fillColor="#0D0D0D"
+        android:pathData="M0,0 h108 v108 h-108 z" />
+
+    <!-- faint CRT grid -->
+    <path android:strokeColor="#18FF8200" android:strokeWidth="0.6"
+        android:pathData="M18,0 V108 M36,0 V108 M54,0 V108 M72,0 V108 M90,0 V108" />
+    <path android:strokeColor="#18FF8200" android:strokeWidth="0.6"
+        android:pathData="M0,18 H108 M0,36 H108 M0,54 H108 M0,72 H108 M0,90 H108" />
+</vector>

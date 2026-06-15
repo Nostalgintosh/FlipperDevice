@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rounded dark tile -->
+    <path
+        android:fillColor="#0D1117"
+        android:pathData="M24,14h60a10,10 0 0 1 10,10v60a10,10 0 0 1 -10,10H24a10,10 0 0 1 -10,-10V24a10,10 0 0 1 10,-10z" />
+    <!-- Prompt chevron ">" -->
+    <path
+        android:strokeColor="#FF8200"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M36,44 L50,54 L36,64" />
+    <!-- Cursor underscore "_" -->
+    <path
+        android:strokeColor="#FF8200"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M58,66 L74,66" />
+</vector>

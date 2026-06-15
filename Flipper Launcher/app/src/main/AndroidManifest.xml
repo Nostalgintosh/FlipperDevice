@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- `win` bridge: outbound SSH to a remote host. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Status-bar readout: which transport is active (wifi / cell / eth). -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- `lx` bridge: dispatch commands into the Termux environment. -->
+    <uses-permission android:name="com.termux.permission.RUN_COMMAND" />
+    <!-- `uninstall` / `rm` commands: drive the system package-removal dialog. -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <!--
+      Code workspace on shared storage (/sdcard/FlipperCode) so Termux can read
+      and compile the files. Pre-11 uses the legacy runtime permission; 11+ uses
+      All-files access (MANAGE_EXTERNAL_STORAGE), requested on demand. Without a
+      grant the editor falls back to an app-private dir Termux can't reach.
+    -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!--
+      Package visibility (Android 11+): a launcher must see every app that
+      exposes a MAIN/LAUNCHER activity in order to list and start it; we also
+      need to resolve Termux to start its RunCommandService.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <package android:name="com.termux" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlipperLauncher">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:clearTaskOnLaunch="true"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout|navigation|uiMode|density"
+            android:theme="@style/Theme.FlipperLauncher">
+
+            <!-- Acts as the device HOME screen -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Also openable from the app list -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
