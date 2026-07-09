@@ -38,16 +38,16 @@ launch the top match; ✕ or the back gesture closes it.
 The bottom third is the whole control surface — exactly where your thumb rests:
 
 ```
-┌───────────────────────────────┐
-│ fz term  disk mem cpu net 12:30│   ← STATUS  (live device vitals)
-│                               │
-│      terminal  /  code        │   ← content   (-apps pops the drawer)
-│                               │
-├───────────────────────────────┤
-│ [pinned] [pinned] [pinned] …  │   ← DOCK  (one-tap favorites)
-│ fz> ___________________   ⏎   │   ← INPUT (runs commands; -apps opens drawer)
-│ [ >_ TERMINAL ] [ </> CODE ]  │   ← TABS
-└───────────────────────────────┘
+┌─────────────────────────────────┐
+│ fz term  disk mem cpu net 12:30 │   ← STATUS  (live device vitals)
+│                                 │
+│      terminal  /  code          │   ← content   (-apps pops the drawer)
+│                                 │
+├─────────────────────────────────┤
+│ [pinned] [pinned] [pinned] …    │   ← DOCK  (one-tap favorites)
+│ fz> ___________________   ⏎     │   ← INPUT (runs commands; -apps opens drawer)
+│ [ >_ TERMINAL ] [ </> CODE ]    │   ← TABS
+└─────────────────────────────────┘
 ```
 
 - **Status** — top bar shows live device vitals in the middle: `disk` (storage used),
